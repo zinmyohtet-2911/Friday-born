@@ -1,0 +1,159 @@
+/* Wrapper - နောက်ခံနဲ့ spacing */
+.header-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+  background-color: #f5f6fa;
+}
+
+/* Header container */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  max-width: 420px;
+  padding: 14px 18px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Profile image */
+.header-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #4a7dff;
+  flex-shrink: 0;
+}
+
+/* Text container */
+.header-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* Title */
+.header-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a2e;
+  line-height: 1.2;
+}
+
+/* Status text */
+.header-status {
+  margin: 0;
+  font-size: 13px;
+  color: #8a8f9c;
+}
+
+/* အပြင်ဆုံး wrapper — အပေါ်အောက် စီ */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Message list — ကျန်တဲ့ နေရာ ယူ၊ ကျော်ရင် scroll */
+.chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;   /* အပေါ်အောက် စီ */
+    align-items: flex-end;    /* ညာဘက်ကပ် */
+    gap: 8px;                 /* message တွေကြား အကွာအဝေး */
+}
+
+/* Input bar — အောက်ဆုံးမှာ ကပ် */
+.chat-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    background-color: #ffffff;
+    border-top: 1px solid #e5e7eb;
+    flex-shrink: 0;
+}
+
+.chat-bubble {
+    background-color: #4a7dff;
+    color: #ffffff;
+    padding: 10px 14px;
+    border-radius: 16px;
+    max-width: 70%;
+    word-wrap: break-word;    /* စာရှည်ရင် အောက်ဆင်းအောင် */
+}
+
+.chat-input {
+    flex: 1;
+    padding: 12px 16px;
+    font-size: 15px;
+    border: 1px solid #e5e7eb;
+    border-radius: 24px;
+    outline: none;
+}
+
+.chat-send-btn {
+    padding: 12px 22px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #4a7dff;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.chat-send-btn:hover {
+    background-color: #3668e0;
+}
+
+/* Input field */
+.chat-input {
+  flex: 1;
+  padding: 12px 16px;
+  font-size: 15px;
+  color: #1a1a2e;
+  background-color: #f5f6fa;
+  border: 1px solid transparent;
+  border-radius: 24px;
+  outline: none;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.chat-input::placeholder {
+  color: #9ca3af;
+}
+
+.chat-input:focus {
+  background-color: #ffffff;
+  border-color: #4a7dff;
+}
+
+/* Send button */
+.chat-send-btn {
+  padding: 12px 22px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #4a7dff;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  flex-shrink: 0;
+}
+
+.chat-send-btn:hover {
+  background-color: #3668e0;
+}
+
+.chat-send-btn:active {
+  transform: scale(0.97);
+}
